@@ -28,6 +28,11 @@
 
 <% 
 	List<String> scoreList = Arrays.asList(new String[]{"X", "O", "O", "O", "X", "O", "O", "O", "X", "O"});
+	sum = 0;
+	for(int i=0; i<scoreList.size; i++){
+		sum+= scoreList.get[i];
+		
+	}
 
 %>
 

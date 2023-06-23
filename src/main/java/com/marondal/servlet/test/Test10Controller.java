@@ -2,11 +2,11 @@ package com.marondal.servlet.test;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-import javax.servlet.annotation.WebFilter;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -37,6 +37,7 @@ public class Test10Controller extends HttpServlet{
 			out.println(userMap.get("name") + "님 환영 합니다.");
 		}
 		out.println("</h2></body></html>");
+
 		
 	}
 	
@@ -47,5 +48,8 @@ public class Test10Controller extends HttpServlet{
 	        put("name", "김인규");
 	    }
 	};
+	
+	
+	
 	
 }
