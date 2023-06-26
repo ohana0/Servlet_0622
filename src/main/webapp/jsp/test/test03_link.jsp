@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>날짜,시간 링크</h1>
-<button class="btn bg-primary"><a href="/jsp/test/test03.jsp?option=time" class="text-light">현재 시간 확인</a></button>
-<button class="btn bg-success"><a href="/jsp/test/test03.jsp?option=date" class="text-light">현재 날짜 확인</a></button>
+<a href="/jsp/test/test03.jsp?option=time"><button class="btn bg-primary text-light">현재 시간 확인</button></a>
+<a href="/jsp/test/test03.jsp?option=date"><button class="btn bg-success text-light">오늘 날짜 확인</button></a>
 </body>
 </html>

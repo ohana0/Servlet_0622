@@ -19,16 +19,19 @@
 		
 		String printString="";
 		if(request.getParameter("option").equals("date")){
-			printString = "오늘 날짜" + nowDate;
+			printString = "오늘 날짜: " + nowDate;
 			
 		}
 		else if(request.getParameter("option").equals("time")){
-			printString= "현재 시간" + nowTime;
+			printString= "현재 시간: " + nowTime;
 		}
 
 		
 	%>
-	<h1><%=printString %></h1>
+	<div class="container">
+	
+		<h1><%=printString %></h1>
+	</div>
 	
 
 	
