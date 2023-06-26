@@ -3,6 +3,7 @@ package com.marondal.servlet.ex;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,6 +32,7 @@ public class Ex05Controller extends HttpServlet{
 		
 		out.println("<h2>이름: " + name + "</h2>");
 		out.println("<h2>나이: " + age + "</h2></body></html>");
+
 		
 		
 	}

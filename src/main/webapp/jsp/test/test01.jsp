@@ -17,7 +17,8 @@
 	for(int i = 0; i<scores.length;i++){
 		sum+=scores[i];
 	}
-	int average = sum / scores.length;
+	double average = sum / (double)scores.length;
+	
 	
 %>
 <div>점수들의 평균은 <%=average %>입니다.</div>
@@ -28,24 +29,57 @@
 
 <% 
 	List<String> scoreList = Arrays.asList(new String[]{"X", "O", "O", "O", "X", "O", "O", "O", "X", "O"});
-	sum = 0;
-	for(int i=0; i<scoreList.size; i++){
-		sum+= scoreList.get[i];
+	int total = 0;
+	for(String ox:scoreList){
+		if(ox.equals("O")){
+			total += scoreList.size()/100;
+		}
 		
 	}
 
 %>
 
-
+<div> 채점 결과는 <%=total %>점 입니다.</div>
 
 
 <!-- 3. 1부터 n까지의 합계를 구하는 함수
 jsp의 선언문 <%! %> 문법을 사용해서 1부터 N까지의 합을 구하는 함수를 만드세요.
 만든 함수를 이용해서 50까지의 합의 결과를 출력하세요.
-4. 나이 구하기
-주어진 생년월일을 가진 사람의 나이를 구하세요.
-String birthDay = "20010820";
-결과 화면 -->
+-->
+<h3>3. 1부터 n까지의 합계를 구하는 함수</h3>
+
+<% 
+	public int sumAll(int number){
+		int sum = 0;
+
+		for(int i = 1; i<=number; i++){
+			sum+=i;
+		}
+		return sum;
+	}
+%>
+
+<div>1부터 50까지의 합은 <%= sumAll(50) %>입니다.</div>
+
+
+
+
+
+
+<h3>4. 나이 구하기</h3>
+
+<% 
+	String birthday = "20010820";
+	int year = Integer.parseInt(birthday.substring(0,4));
+	int age = 2023- year +1;
+%>
+<div><%=birthday %>의 나이는 <%=age %>살입니다.</div>
+
+
+
+
+
+
 
 </body>
 </html>
