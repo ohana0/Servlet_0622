@@ -66,29 +66,30 @@
 	<thead>
 		<tr class="d-flex">
 			<th class="col-2 d-flex justify-content-center">id</th>
-			<th class="col-2 d-flex justify-content-center">표지</th>
-			<th class="col-8 d-flex justify-content-center">제목</th>
+			<th class="col-3 d-flex justify-content-center">표지</th>
+			<th class="col-7 d-flex justify-content-center">제목</th>
 			
 		</tr>
 	</thead>
 	<tbody>
-<%
-	for(int i = 0; i<list.size(); i++){
-		map=list.get(i);
-%>
+		<%
+			for(int i = 0; i<list.size(); i++){
+				map=list.get(i);
+		%>
 
 		<tr class="d-flex">
 			<td class="col-2 d-flex justify-content-center"><%=map.get("id") %></td>
-			<td class="col-2 d-flex justify-content-center"><img alt="<%=map.get("title") %>" src="<%=map.get("image") %>" width="150px"></td>
-			<td class="col-8 d-flex justify-content-center">
-			<a href="/jsp/test/test08_info.jsp?id=<%= map.get("id")%> "><%=map.get("title") %></a></td>
+			<td class="col-3 d-flex justify-content-center"><img alt="<%=map.get("title") %>" src="<%=map.get("image") %>" width="150px"></td>
+			<td class="col-7 d-flex justify-content-center">
+				<a href="/jsp/test/test08_info.jsp?id=<%= map.get("id")%>"><%=map.get("title") %></a>
+			</td>
 		</tr>
 
 
 
-<%		
-	}
-%>		
+		<%		
+			}
+		%>		
 
 		
 	</tbody>

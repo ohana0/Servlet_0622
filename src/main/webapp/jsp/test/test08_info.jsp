@@ -72,14 +72,12 @@
     
 	%>
 	
-	<div id="wrapper" class="d-flex">
-		<div class="col-2">
-			<img alt="<%=map.get("title") %>" src="<%= map.get("image")%>" width="150px">
+	<div id="container" class="d-flex p-2">
+		<img alt="<%=map.get("title") %>" src="<%= map.get("image")%>" width="150px">
 		
-		</div>
-		<div class="col-2">
-			<h1><%=map.get("title") %></h3><br>
-			<h3 class="text-primary"><%=map.get("author") %></h3><br>
+		<div class="pl-1">
+			<h1><%=map.get("title") %></h3>
+			<h3 class="text-primary"><%=map.get("author") %></h3>
 			<h3 class="text-secondary"><%=map.get("publisher") %></h3>
 			
 		</div>

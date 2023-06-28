@@ -9,14 +9,18 @@
 
 </head>
 <body>
-	<h3>메뉴 검색</h3>
-		<form method="get" action="/jsp/test/test07.jsp">
-			<div class="d-flex">
-				<input type="text" name="menu" class="form-control col-3"> 
-				<input type="checkbox" name="pointUnder4" class="col-1"><label>4점 이하 제외</label><br>
-			
+	<h3 class="p-2">메뉴 검색</h3>
+	<form method="get" action="/jsp/test/test07.jsp">
+		<div class="d-flex p-2">
+			<input type="text" name="menu" class="form-control col-3"> 
+			<div class="d-flex align-items-center justify-content-center p-2">
+				<input type="checkbox" name="pointUnder4" class="pr-2"><label>  4점 이하 제외</label><br>
 			</div>
+		
+		</div>
+		<div class="p-2">
 			<button class="btn btn-primary">검색</button>
+		</div>
 	
 	
 	</form>
