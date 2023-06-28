@@ -61,35 +61,24 @@
     
     String id = request.getParameter("id");
     
-    for(int i=0; i<list.size();i++){
-    	map=list.get(i);
-    	if(id.equals(String.valueOf(map.get("id")))){
-
+    for(int i = 0; i < list.size(); i++){
+    	if(id.equals(String.valueOf(list.get(i).get("id")))){
+		    map = list.get(i);
     		break;
     	}
     }
-    
-    
-	%>
+    %>
 	
 	<div id="container" class="d-flex p-2">
-		<img alt="<%=map.get("title") %>" src="<%= map.get("image")%>" width="150px">
-		
-		<div class="pl-1">
+		<img alt="<%=map.get("title") %>" src="<%= map.get("image")%>" width="150px">		
+		<div class="pl-1 col-6">
 			<h1><%=map.get("title") %></h3>
 			<h3 class="text-primary"><%=map.get("author") %></h3>
 			<h3 class="text-secondary"><%=map.get("publisher") %></h3>
-			
 		</div>
 	
 	</div>
 	
-
-
-
-
-
-
 	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
