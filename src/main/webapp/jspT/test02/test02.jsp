@@ -97,6 +97,7 @@
 	    musicInfo.put("composer", "아이유,이종훈,이채규");
 	    musicInfo.put("lyricist", "아이유");
 	    musicList.add(musicInfo);
+
 	%>
 			<article id="artist" class="d-flex">
 				<div class="artist-image d-flex justify-content-center align-items-center">

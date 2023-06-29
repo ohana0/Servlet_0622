@@ -96,12 +96,34 @@
 	    musicInfo.put("composer", "아이유,이종훈,이채규");
 	    musicInfo.put("lyricist", "아이유");
 	    musicList.add(musicInfo);
+	    
+	    
+	    musicInfo = new HashMap<>();
+	    musicInfo.put("id", 9999);
+	    musicInfo.put("title", "검색된 음악이 없습니다.");
+	    musicInfo.put("album", "");
+	    musicInfo.put("singer", "");
+	    musicInfo.put("thumbnail", "https://i.imgur.com/cliDn19.jpeg");
+	    musicInfo.put("time", 0);
+	    musicInfo.put("composer", "");
+	    musicInfo.put("lyricist", "");
+	    musicList.add(musicInfo);
+	    
 	    String getId = request.getParameter("id");
 	    for(Map<String,Object> music:musicList){
 	    	if(String.valueOf(music.get("id")).equals(getId)){
 	    		musicInfo = music;
 	    		
 	    	}
+	    	
+	    }
+	    String getTitle = request.getParameter("title");
+	    for(Map<String,Object> music:musicList){
+	    	if(String.valueOf(music.get("title")).equals(getTitle)){
+	    		musicInfo = music;
+	    		
+	    	}
+	    	
 	    }
 	    int time = (int)musicInfo.get("time");
 	    String timeString=time/60 + ":" +time%60; 
