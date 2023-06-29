@@ -1,0 +1,55 @@
+@charset "UTF-8";
+#wrapper{
+	width:1200px;
+	margin:auto;
+}
+header{
+	height:80px;
+}
+nav{
+	height:40px;
+}
+header>.logo{
+	width:130px;
+	color:green;
+}
+header>.search{
+	width:500px;
+}
+
+footer{
+	height:50px;
+}
+#main-content>#artist{
+	height:200px;
+	border-color:green;
+	border-style:solid;
+}
+#artist>.artist-image{
+	width:200px;
+}
+#song-info{
+	height:200px;
+	border-color:green;
+	border-style:solid;
+}
+.song-image{
+	width:200px;
+}
+.music-info-singer{
+	color:green;
+	font-weight:bold;
+	font-size:20px;
+}
+.music-info-detail{
+	width:80px;
+
+}
+.music-info-detail-font{
+	font-size:14px;
+}
+.main-menu-item{
+	font-weight:bold;
+	color:black;
+	font-size:16px;
+}
