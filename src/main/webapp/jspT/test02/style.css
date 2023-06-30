@@ -6,15 +6,16 @@
 header{
 	height:80px;
 }
+
+.search{
+	width:650px;
+}
 nav{
 	height:40px;
 }
 header>.logo{
-	width:130px;
+	width:200px;
 	color:green;
-}
-header>.search{
-	width:500px;
 }
 
 footer{
@@ -32,6 +33,9 @@ footer{
 	height:200px;
 	border-color:green;
 	border-style:solid;
+}
+.input-title{
+	width:500px;
 }
 .song-image{
 	width:200px;
