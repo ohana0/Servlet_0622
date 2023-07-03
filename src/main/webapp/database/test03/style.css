@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#wrapper{
+	width:1200px;
+}
+header{
+	height:80px;
+	background-color:darkorange;
+}
+nav{
+	height:50px;
+	background-color:darkorange;
+}
+section{
+	height:400px;
+	background-color:aliceblue;	
+}
